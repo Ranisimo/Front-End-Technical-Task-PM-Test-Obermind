@@ -19,6 +19,14 @@
   }
 }
 
+.urbanist-400 {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -52,4 +60,118 @@ body {
 
 .section-image {
   width: 100vw;
+}
+
+.info-section {
+  background: #FFFFFF;
+  width: 100vw;
+  height: 2360;
+}
+
+.empower-section {
+  background: #111111;
+  width: 100vw;
+  height: 987;
+}
+
+.seamless-withdrawals-section {
+  background: #FFFFFF;
+  width: 100vw;
+  height: 991;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 891;
+  background: #000000;
+}
+
+.red-border {
+  background: #ED1D25;
+  width: 100vw;
+  height: 48px;
+}
+
+.pay-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 195;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.quick-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 300px;
+  margin: 24px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 425px;
+  height: 300px;
+  gap: 20px;
+}
+
+.about-info-logo {
+  width: 160px;
+  height: 45px;
+}
+
+.about-info-socials {
+  width: 264px;
+  height: 40px;
+}
+
+.links-container {
+  display: flex;
+  width: 596px;
+  gap: 120px;
+}
+
+.links-header {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-wrap: nowrap;
+}
+
+li, .about-text {
+  opacity: 60%;
+}
+
+.footer-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF99;
+  width: 80vw;
+  gap: 24px;
+  border-top: 1px solid #FFFFFF;
+  padding: 48px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #FFFFFF;
+  width: 100vw;
+  padding: 24px;
+  gap: 2px;
+  opacity: 0.7;
 }
