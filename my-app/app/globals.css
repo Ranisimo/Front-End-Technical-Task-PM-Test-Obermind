@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 :root {
@@ -40,6 +41,26 @@ body {
   align-items: center;
 }
 
+/* Overlay container for splash images */
+.splash-overlay-container {
+  position: relative;
+  width: 100%;
+  height: 1045px;
+}
+
+.splash-overlay-container .splash-image {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.splash-overlay-container .splash-image-overlay {
+  position: absolute;
+  top: 800px;
+  width: 100vw;
+}
+
+/* Header container */
 .header {
   width: 100%;
   background: #FFFFFF;
@@ -58,6 +79,7 @@ body {
   width: 100vw;
 }
 
+/* Second section */
 .section-image {
   width: 100vw;
 }
@@ -80,6 +102,7 @@ body {
   height: 991;
 }
 
+/* Footer component */
 .footer {
   display: flex;
   flex-direction: column;

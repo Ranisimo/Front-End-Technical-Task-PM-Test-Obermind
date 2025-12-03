@@ -10,16 +10,18 @@ export default function Home() {
       <Header />
       <main>
         <section>
-          <img
-            className="splash-image"
-            src="/main.svg"
-            alt="Main logo"
-          />
-          <img
-            className="splash-image-overlay"
-            src="/splash.svg"
-            alt="Main logo"
-          />
+          <div className="splash-overlay-container">
+            <img
+              className="splash-image"
+              src="/main.svg"
+              alt="Main logo"
+            />
+            <img
+              className="splash-image-overlay"
+              src="/splash.svg"
+              alt="White splash overlay"
+            />
+          </div>
         </section>
         <section>
            <img
