@@ -1,9 +1,62 @@
+'use client';
+import React, {useEffect, useState} from "react";
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
+
 import Header from "components/Header";
 import Footer from "components/Footer";
 import Card from "@/components/Card";
+import CurrencyButtons from "@/components/CurrencyButtons";
+
+// Mock data for currency buttons
+let currencyJSON = [
+  {
+    "currency": "USD/EUR",
+    "icon": "/usdeu.svg",
+    "vector": "/upVector.svg", // Ideally, wouldn't be svgs and would be data-driven
+    "price": 0.00014,
+    "trend": -234.45
+  },
+  {
+    "currency": "XAUUSD",
+    "icon": "/asset.png",
+    "vector": "/downVector.svg",
+    "price": 0.00014,
+    "trend": -234.45
+  },
+  {
+    "currency": "USD/EUR",
+    "icon": "/usdeu.svg",
+    "vector": "/upVector.svg",
+    "price": 0.00014,
+    "trend": -234.45
+  },
+  {
+    "currency": "XAUUSD",
+    "icon": "/asset.png",
+    "vector": "/downVector.svg",
+    "price": 0.00014,
+    "trend": -234.45
+  }
+];  
+
+// Mock useEffect and useState to fetch currency data from an API
+//  const [currencyData, setCurrencyData] = useState(null);
+
+//   useEffect(() => {
+//     const fetchCurrencyData = async () => {
+//       try {
+//         const response = await fetch('https://api.example.com/data');
+//         const jsonData = await response.json();
+//         setCurrencyData(jsonData);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchCurrencyData();
+//   }, []);
 
 export default function Home() {
   return (
@@ -22,6 +75,10 @@ export default function Home() {
               src="/splash.svg"
               alt="White splash overlay"
             />
+            <div className="currency-button-container df-ac-jc">
+              {/* currencyJSON would be replaced with currencyData recieved from API/Backend */}
+              <CurrencyButtons items={currencyJSON} /> 
+            </div>
           </div>
         </section>
         <section>
