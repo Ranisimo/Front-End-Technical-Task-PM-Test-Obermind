@@ -1,8 +1,8 @@
 /* Currency Button component */
 .currency-button-container { 
-  width: 100vw;
+  width: 100%;
   position: absolute;
-  top: 900px;
+  top: -150px;
 }
 
 .currency-buttons-list {
