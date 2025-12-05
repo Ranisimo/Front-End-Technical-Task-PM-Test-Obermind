@@ -145,9 +145,8 @@
   font-size: 16px;
   font-weight: 400;
   text-wrap: nowrap;
-  width: 187px;
   height: 56px;
-  padding: 0 34px;
+  padding: 0 24px;
   border-radius: 55px;
   box-shadow: 0px 4px 30px 0px #FF000073, 0px 4px 20px 0px #00000040 inset;
   background: linear-gradient(90deg, #800800 0%, #9B0C11 100%);
@@ -168,6 +167,9 @@
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -177,6 +179,11 @@
 .access-button > * {
   position: relative;
   z-index: 1;
+}
+
+.access-button-img {
+  width: 24px;
+  height: 24px;
 }
 
 .access-cards-container {  
@@ -239,7 +246,7 @@
   color: #000000;
   font-family: var(--font-gilroy-bold);
   font-weight: 400;
-  font-size: 62px;
+  font-size: 72px;
   line-height: 97%;
   width: 30%;
 }
@@ -331,8 +338,129 @@
 
 /* Empower section */
 .empower-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background: #111111;
-  height: 987;
+  height: 987px;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.empower-grid-container {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  align-items: stretch;
+  padding: 40px 20px;
+}
+
+.empower-quad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  min-height: 180px;
+  text-align: center;
+  align-items: center;
+}
+
+.empower-quad-img {
+  height: 84px;
+  width: 84px;
+}
+
+.empower-quad--tl:hover {
+  /* glow originates from opposite corner (bottom-right) */
+  background: radial-gradient(100% 100% at 100% 100%, rgba(226, 0, 9, 0.41) 0%, rgba(3, 0, 20, 0) 100%);
+}
+
+.empower-quad--tr:hover {
+  /* glow originates from opposite corner (bottom-left) */
+  background: radial-gradient(100% 100% at 0% 100%, rgba(226, 0, 9, 0.41) 0%, rgba(3, 0, 20, 0) 100%);
+}
+
+.empower-quad--bl:hover {
+  /* glow originates from opposite corner (top-right) */
+  background: radial-gradient(100% 100% at 100% 0%, rgba(226, 0, 9, 0.41) 0%, rgba(3, 0, 20, 0) 100%);
+}
+
+.empower-quad--br:hover {
+  /* glow originates from opposite corner (top-left) */
+  background: radial-gradient(100% 100% at 0% 0%, rgba(226, 0, 9, 0.41) 0%, rgba(3, 0, 20, 0) 100%);
+}
+
+.empower-quad-title {
+  font-family: var(--font-gilroy-medium);
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.empower-quad-text {
+  font-family: 'Urbanist';
+  font-size: 18px;
+  margin: 0;
+  color: #A8A6B1;
+  line-height: 1.6;
+}
+
+.empower-center-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  pointer-events: none;
+}
+
+.empower-center-logo img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Subtle crosshair lines behind the center logo */
+.empower-grid-container::before,
+.empower-grid-container::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.04), rgba(255,255,255,0.04));
+  z-index: 1;
+}
+
+.empower-grid-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.03), rgba(255,255,255,0.03));
+  z-index: 1;
+}
+
+.empower-header-text {
+  font-family: var(--font-gilroy-bold);
+  font-size: 72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.empower-header-description {
+  color: #A8A6B1;
+  font-family: 'Urbanist';
+  font-size: 18px;
+  text-align: center;
+  width: 20%;
 }
 
 /* Seamless Withdrawals section */

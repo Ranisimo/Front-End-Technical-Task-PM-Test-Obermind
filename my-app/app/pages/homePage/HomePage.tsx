@@ -154,9 +154,9 @@ export default function HomePage() {
             <p className="access-title">Access <span style={{color: "#ED1D25"}}>17,000+</span> markets all in one</p>
             <p className="access-title-description">Trade forex, shares, indices, and commodities with competitive spreads, deep liquidity, and seamless execution.</p>
             <div className="access-button-container">
-              <button className="access-button">$0 Deposit Fees</button>
-              <button className="access-button">Spreads from 0.0 pips</button>
-              <button className="access-button">Secure Funds</button>
+              <button className="access-button"><img className="access-button-img" src='/coin.svg'/>$0 Deposit Fees</button>
+              <button className="access-button"><img className="access-button-img" src='/spreads.svg'/>Spreads from 0.0 pips</button>
+              <button className="access-button"><img className="access-button-img" src='/secure.svg'/>Secure Funds</button>
             </div>
           </div>
           <div className="access-cards-container df-ac-jc">
@@ -197,6 +197,37 @@ export default function HomePage() {
           </div>
         </section>
         <section className="empower-section">
+          <div className="empower-header-container df-fc-ac-jc">
+            <p className="empower-header-text">Empower Your Trading</p>
+            <p className="empower-header-description">Unlock advanced tools, insights, and support to maximise your trading potential.</p>
+          </div>
+          <div className="empower-grid-container">
+            <div className="empower-quad empower-quad--tl">
+              <img className="empower-quad-img" src='/charting.png' />
+              <h3 className="empower-quad-title">Charting tools and indicators</h3>
+              <p className="empower-quad-text">Sharpen your analysis with an array of intuitive charts, drawing tools and 100+ indicators.</p>
+            </div>
+            <div className="empower-quad empower-quad--tr">
+              <img className="empower-quad-img" src='/leverage.png' />
+              <h3 className="empower-quad-title">Get flexible leverage</h3>
+              <p className="empower-quad-text">Trade larger positions and maximise your return potential with lower margin requirements.</p>
+            </div>
+            <div className="empower-quad empower-quad--bl">
+              <img className="empower-quad-img" src='/clock.png' />
+              <h3 className="empower-quad-title">Round-the-clock support</h3>
+              <p className="empower-quad-text">Our dedicated experts are available 24/5 to guide and assist you at every step.</p>
+            </div>
+            <div className="empower-quad empower-quad--br">
+              <img className="empower-quad-img" src='/alert.png' />
+              <h3 className="empower-quad-title">Customisable price alerts</h3>
+              <p className="empower-quad-text">Set real-time alerts to track asset movements and stay ahead with your strategy.</p>
+            </div>
+
+            {/* Center logo overlay */}
+            <div className="empower-center-logo df-ac-jc">
+              <img src="/premierLogo.svg" alt="Premier logo" />
+            </div>
+          </div>
         </section>
         <section className="seamless-withdrawals-section df-fc-ac-jc">
           <div className="seamless-wthdrawals-header df-fc-ac-jc">
@@ -234,7 +265,7 @@ export default function HomePage() {
               <p className="daily-updates-header-title">Daily Updates</p>
               <p className="daily-updates-header-text">Everything you need to trade the markets</p>
             </div>
-            <div className="daily-updates-view-all"><p>View all</p></div>
+            <div className="daily-updates-view-all"><p>View all {'>'}</p></div>
           </div>
           <div className="daily-updates-cards-container df-ac-jc">
             <div className="daily-updates-news">

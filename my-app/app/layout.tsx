@@ -31,6 +31,17 @@ const gilroyBold = Gilroy({
   variable: '--font-gilroy-bold'
 });
 
+const gilroyMedium = Gilroy({
+  src: [
+    {
+      path: '../public/fonts/Gilroy-Medium.ttf',
+      weight: '400',
+      style: 'normal'
+    }
+  ],
+  variable: '--font-gilroy-medium'
+});
+
 export const metadata: Metadata = {
   title: "Front-End Technical Task – “PM-Test”",
   description: "Created by Kizzy Sinar for Obermind",
@@ -44,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} ${gilroyBold.variable} antialiased`}
+        className={`${urbanist.variable} ${gilroyBold.variable} ${gilroyMedium.variable} antialiased`}
       >
         {children}
       </body>
