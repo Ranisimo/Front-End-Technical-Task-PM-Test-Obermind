@@ -8,11 +8,11 @@ export default function Header() {
       <div className="bottom-header">
         <img src="/logoDark.svg" alt="Main logo" />
         <div className="nav-bar">
-          <p className="nav-item">Trading</p>
-          <p className="nav-item">Discover</p>
-          <p className="nav-item">Promotions</p>
-          <p className="nav-item">Company</p>
-          <p className="nav-item">Partner with us</p>
+          <div className="nav-element"><p className="nav-item">Trading</p><img src="/chevron.svg"/></div>
+          <div className="nav-element"><p className="nav-item">Discover</p><img src="/chevron.svg"/></div>
+          <div className="nav-element"><p className="nav-item">Promotions</p><img src="/chevron.svg"/></div>
+          <div className="nav-element"><p className="nav-item">Company</p><img src="/chevron.svg"/></div>
+          <div className="nav-element" style={{color: '#ED1D25'}}><p className="nav-item">Partner with us  </p><img src="/arrowRight.svg"/></div>
         </div>
         <div className="register-login">
           <button className="register-button">Register</button>

@@ -52,6 +52,12 @@
   color: #010205;
 }
 
+.nav-element {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
 .register-login {
   display: flex;
   align-items: center;
