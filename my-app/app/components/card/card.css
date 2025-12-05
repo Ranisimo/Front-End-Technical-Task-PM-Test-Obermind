@@ -1,0 +1,11 @@
+.card-container {
+  gap: 30px;
+}
+
+.card {
+  width: 394;
+  border-width: 1px;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 30px;
+}
